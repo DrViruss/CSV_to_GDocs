@@ -13,6 +13,8 @@
 3. Put authentication .json file to project folder and rename authentication file to `token.js`
 ![project folder example](assets/project_folder.png)
 4. Run `python main.py`
+
 ![console output](assets/output.png)
-5. Go to [GDrive](https://drive.google.com/drive/my-drive) and open `customers-1000` file
+
+6. Go to [GDrive](https://drive.google.com/drive/my-drive) and open `customers-1000` file
 ![console output](assets/gdrive_file.png)
