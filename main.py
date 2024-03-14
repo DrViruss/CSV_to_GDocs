@@ -10,7 +10,7 @@ from googleapiclient.errors import HttpError
 TITLE = "customers-1000"
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 SHEET_COLS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
-            'V', 'W', 'X', 'Y', 'Z']
+              'V', 'W', 'X', 'Y', 'Z']
 
 
 def auth():
@@ -74,4 +74,4 @@ if __name__ == __name__:
     auth = auth()
     service = build("sheets", "v4", credentials=auth)
     sheet_id = create(service, TITLE)
-    update(service, sheet_id, 'USER_ENTERED', pd.read_csv(TITLE+".csv"))
+    update(service, sheet_id, 'USER_ENTERED', pd.read_csv(TITLE + ".csv"))
